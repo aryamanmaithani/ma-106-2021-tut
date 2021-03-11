@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[lmargin=1in,rmargin=1in,tmargin=1in,bmargin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsfonts, amsthm, mathtools}
+\usepackage[utf8]{inputenc}
+\usepackage[inline]{enumitem}
+\usepackage{cancel}
+\usepackage{soul}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{datetime2}
+\usepackage{centernot}
+
+\setlength\parindent{0pt}
+\let\emptyset\varnothing
+\newcommand{\rank}{\operatorname{rank}}
+%\renewcommand{\span}{\operatorname{span}}
+
+\usepackage{xcolor}
+\definecolor{mybgcolor}{RGB}{50, 50, 50} %46, 51, 63
+
+% \usepackage{pagecolor}
+% \pagecolor{mybgcolor}
+% \color{white}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+% \usepackage{titlesec}
+% \titleformat{\section}[block]
+%   {\normalfont\scshape}{\S\thesection}{0.25cm}{\large}
+
+% \usepackage{geometry}
+% \geometry{
+% 	a4paper,
+% 	total={170mm,257mm},
+% 	left=20mm,
+% 	top=20mm,
+% }
+
+\title{(Extra)\texorpdfstring{$^2$}{2} Questions for MA 106}
+\author{Aryaman Maithani}%\\
+%\small TA for D1-T5}
+\date{Semester: Spring 2021\\ Latest update: \DTMnow}
+
+\begin{document}
+\maketitle
+
+These are questions that came out of some discussions.
+
+\begin{enumerate}
+	\item A \textbf{nonempty} subset $J \subset \mathbb{R}^{n \times n}$ is said to be a \emph{two-sided ideal} if it has the following properties:
+	\begin{enumerate}
+		\item (Closed under addition) For all $A, B \in J,$ we have $A + B \in J,$
+		\item (Absorption) For all $A \in J$ and $C \in \mathbb{R}^{n \times n},$ we have $AC, CA \in J.$
+	\end{enumerate}
+	Show that the ideals of $\mathbb{R}^{n \times n}$ are precisely $\{O\}$ and $\mathbb{R}^{n \times n}.$
+\end{enumerate}
+
+\end{document}
