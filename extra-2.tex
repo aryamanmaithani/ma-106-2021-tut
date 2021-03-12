@@ -16,6 +16,7 @@
 
 \usepackage{xcolor}
 \definecolor{mybgcolor}{RGB}{50, 50, 50} %46, 51, 63
+\newcommand{\hint}[1]{\textbf{HIDDEN:} {\color[rgb]{0.95, 0.95, 0.95}#1}}
 
 % \usepackage{pagecolor}
 % \pagecolor{mybgcolor}
@@ -51,7 +52,15 @@ These are questions that came out of some discussions.
 		\item (Closed under addition) For all $A, B \in J,$ we have $A + B \in J,$
 		\item (Absorption) For all $A \in J$ and $C \in \mathbb{R}^{n \times n},$ we have $AC, CA \in J.$
 	\end{enumerate}
-	Show that the ideals of $\mathbb{R}^{n \times n}$ are precisely $\{O\}$ and $\mathbb{R}^{n \times n}.$
+	Show that the (two-sided) ideals of $\mathbb{R}^{n \times n}$ are precisely $\{O\}$ and $\mathbb{R}^{n \times n}.$
+	%
+	\item Let $A \in \mathbb{R}^{n \times n}$ be such that $Ay = y$ for all $y \in \mathbb{R}^{n \times 1}.$ Show that $A = I.$\\
+	\hint{Consider $y = e_k$ for $k \in \{1, \ldots, n\}.$}
+	%
+	\item Suppose $A \in \mathbb{R}^{2 \times 2}$ is such that $x^\top Ax = 0$ for all $x \in \mathbb{R}^{2 \times 1}.$ Is it necessary that $A = O?$\\
+	\hint{No. Interpret $x^\top Ax$ as $\langle Ax, x\rangle.$}
+	%
+	\item Let $P \in \mathbb{R}^{n \times n}$ be invertible and let $A = P^{\top}P.$ \\
+	Show that if $x \in \mathbb{R}^{n \times 1},$ then $x^\top Ax = 0 \iff x = 0.$
 \end{enumerate}
-
 \end{document}
