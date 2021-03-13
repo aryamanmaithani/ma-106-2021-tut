@@ -46,15 +46,17 @@
 
 These are questions that came out of some discussions.
 
+In the following, $\mathbb{F}$ denotes an arbitrary field. You may read \href{https://aryamanmaithani.github.io/ma-106-2021-tut/fields-and-vector-spaces.pdf}{this} to get an introduction to fields. Or may assume that $\mathbb{F} = \mathbb{R}$ or $\mathbb{C}.$ (Although your answers then may not work for a general field.)
+
 \begin{enumerate}[leftmargin=*]
-	\item A \textbf{nonempty} subset $J \subset \mathbb{R}^{n \times n}$ is said to be a \emph{two-sided ideal} if it has the following properties:
+	\item A \textbf{nonempty} subset $J \subset \mathbb{F}^{n \times n}$ is said to be a \emph{two-sided ideal} if it has the following properties:
 	\begin{enumerate}
 		\item (Closed under addition) For all $A, B \in J,$ we have $A + B \in J,$
-		\item (Absorption) For all $A \in J$ and $C \in \mathbb{R}^{n \times n},$ we have $AC, CA \in J.$
+		\item (Absorption) For all $A \in J$ and $C \in \mathbb{F}^{n \times n},$ we have $AC, CA \in J.$
 	\end{enumerate}
-	Show that the (two-sided) ideals of $\mathbb{R}^{n \times n}$ are precisely $\{O\}$ and $\mathbb{R}^{n \times n}.$
+	Show that the (two-sided) ideals of $\mathbb{F}^{n \times n}$ are precisely $\{O\}$ and $\mathbb{F}^{n \times n}.$
 	%
-	\item Let $A \in \mathbb{R}^{n \times n}$ be such that $Ay = y$ for all $y \in \mathbb{R}^{n \times 1}.$ Show that $A = I.$\\
+	\item Let $A \in \mathbb{F}^{n \times n}$ be such that $Ay = y$ for all $y \in \mathbb{F}^{n \times 1}.$ Show that $A = I.$\\
 	\hint{Consider $y = e_k$ for $k \in \{1, \ldots, n\}.$}
 	%
 	\item Suppose $A \in \mathbb{R}^{2 \times 2}$ is such that $x^\top Ax = 0$ for all $x \in \mathbb{R}^{2 \times 1}.$ Is it necessary that $A = O?$\\
@@ -62,5 +64,11 @@ These are questions that came out of some discussions.
 	%
 	\item Let $P \in \mathbb{R}^{n \times n}$ be invertible and let $A = P^{\top}P.$ \\
 	Show that if $x \in \mathbb{R}^{n \times 1},$ then $x^\top Ax = 0 \iff x = 0.$
+	%
+	\item Let $A \in \mathbb{F}^{n \times n}$ be arbitrary. Show that
+	\begin{enumerate}
+		\item $A$ can be written as a sum of two invertible matrices, and
+		\item $A$ can be written as a sum of two non-invertible matrices.
+	\end{enumerate}
 \end{enumerate}
 \end{document}
