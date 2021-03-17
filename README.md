@@ -12,7 +12,7 @@ Week 2:
 5. Inverse
 6. Ax = 0 has only the zero solution ⇔ A is invertible
 7. Let A, B ∈ ℝ^{n × n}. AB = I ⇔ BA = I 
-8. RCF. REF + the entries above the pivots are 0s.
+8. RCF. REF + pivots are 1 + the entries above the pivots are 0s
 9. A can be transformed to I via EROs ⇔ A is invertible
 10. GJM
 11. Linear (in)dependence
