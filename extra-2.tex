@@ -46,7 +46,13 @@
 
 These are questions that came out of some discussions.
 
-In the following, $\mathbb{F}$ denotes an arbitrary field. You may read \href{https://aryamanmaithani.github.io/ma-106-2021-tut/fields-and-vector-spaces.pdf}{this} to get an introduction to fields. Or may assume that $\mathbb{F} = \mathbb{R}$ or $\mathbb{C}.$ (Although your answers then may not work for a general field.)
+\textbf{Notations}
+\begin{enumerate}
+	\item $\mathbb{F}$ denotes an arbitrary field. You may read \href{https://aryamanmaithani.github.io/ma-106-2021-tut/fields-and-vector-spaces.pdf}{this} to get an introduction to fields. Or may assume that $\mathbb{F} = \mathbb{R}$ or $\mathbb{C}.$ (Although your answers then may not work for a general field.)
+	%
+	\item Given a linear transformation $T,$ $\mathcal{N}(T)$ denotes the null space of $T.$
+\end{enumerate}
+
 
 \begin{enumerate}[leftmargin=*]
 	\item A \textbf{nonempty} subset $J \subset \mathbb{F}^{n \times n}$ is said to be a \emph{two-sided ideal} if it has the following properties:
@@ -73,5 +79,12 @@ In the following, $\mathbb{F}$ denotes an arbitrary field. You may read \href{ht
 	%
 	\item Can every matrix $A \in \mathbb{F}^{n \times n}$ be written as a product $LU$ where $L, U \in \mathbb{F}^{n \times n}$ are lower and upper triangular, respectively?\\
 	\hint{No. Try to find a counterexample for $n = 2.$}
+	%
+	\item Let $V$ and $W$ be finite dimensional vector spaces over $\mathbb{F}.$ Let $T : V \to W$ be a linear transformation and let $B = \{v_1, \ldots, v_k\}$ be a basis of $\mathcal{N}(T).$ Extend $B$ to a basis $B' = B \cup \{v_{k + 1}, \ldots, v_n\}$ of $V.$ Show that $\{T(v_{k+1}), \ldots, T(v_n)\}$ is a basis of range (or image) of $T.$\\
+	What can you say about the dimensions involved? Does this seem familiar?
+	%
+	\item Let $V$ and $W$ be finite dimensional vector spaces over $\mathbb{F}.$ Let $T : V \to W$ be a linear transformation and let $B = (v_1, \ldots, v_k)$ be an ordered basis of $\mathcal{N}(T).$ Extend $B$ to an ordered basis $B' = (v_1, \ldots, v_k, v_{k + 1}, \ldots, v_n)$ of $V.$ Fix any ordered basis $C$ of $W.$ What can you say about the first $k$ columns of $M_{B'}^C(T)?$ The last $n - k?$
+	%
+	\item Let $V$ be a finite  dimensional vector spaces over $\mathbb{F}$ and $T : V \to V$ a linear transformation. Show that there exist ordered bases $B$ and $C$ of $T$ such that the matrix $M_B^C(T)$ is diagonal with entries $1, \ldots, 1, 0, \ldots, 0.$
 \end{enumerate}
 \end{document}
